@@ -1,0 +1,45 @@
+.section-mylist{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../../../assets/images/backgrounAveng.jpg");
+    background-color: #a03232; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    opacity: 80%;
+
+}
+
+.section-mylist__form{
+    text-align: center;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+
+.container-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.section-mylist__cards {
+    margin-top: 10rem;
+    color:#f3f3f3;
+    border-radius: 2rem;
+    border: 0.5rem solid white;
+    width: 20rem;
+    padding: 2rem;
+    background-color: #a03232;
+
+   
+
+}
+
+.new-card{
+    font-size: 1.4rem;
+}

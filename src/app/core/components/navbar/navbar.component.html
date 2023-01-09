@@ -1,0 +1,7 @@
+<div class="navbar">
+<li *ngFor="let link of links" class="navbar__li">
+  <a [routerLink]="[link.url]" class="navbar__li__a">
+    {{ link.label | uppercase }}
+  </a>
+</li>
+</div>

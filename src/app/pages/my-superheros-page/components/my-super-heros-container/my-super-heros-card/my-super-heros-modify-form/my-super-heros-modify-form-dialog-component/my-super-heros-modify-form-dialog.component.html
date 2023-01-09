@@ -1,0 +1,28 @@
+<div class="modify-hero-form">
+<h1 mat-dialog-title class="modify-hero-form__title">MODIFY HERO</h1>
+<form [formGroup]="modifyMySuperheroForm" (ngSubmit)="modifyMySuperhero()">
+  <div mat-dialog-content class="modify-hero-form__text">
+    <label for="name" class="modify-hero-form__label">NAME: </label>
+    <input
+      id="name"
+      class="modify-hero-form__text__box"
+      type="text"
+      oninput="this.value = this.value.toUpperCase()"
+      formControlName="name"
+      required
+    />
+    <label for="name" class="modify-hero-form__label">DESCRIPTION: </label>
+    <input
+      id="description"
+      class="modify-hero-form__text__box"
+      type="text"
+      oninput="this.value = this.value.toUpperCase()"
+      formControlName="description"
+    />
+  </div>
+  <div mat-dialog-actions class="form-modif-buttons">
+    <button mat-button mat-dialog-close class="form-modif-buttons__button">BACK</button>
+    <button type="submit" mat-button mat-dialog-close cdkFocusInitial class="form-modif-buttons__button">MODIFY</button>
+  </div>
+</form>
+</div>

@@ -1,0 +1,14 @@
+<section class="section-mylist">
+  <div class="section-mylist__form">
+<app-my-super-heros-create-form></app-my-super-heros-create-form>
+</div>
+<div class="container-section">
+<div class="section-mylist__cards">
+<ng-container *ngIf="this.mySuperheros$ | async as mySuperheros">
+  <ng-container *ngFor="let mySuperhero of mySuperheros">
+    <app-my-super-heros-card [mySuperhero]="mySuperhero" (mySuperheroRemoved)="loadMySuperheros()" (mySuperheroModified)="loadMySuperheros()" class="new-card"></app-my-super-heros-card>
+  </ng-container>
+</ng-container>
+</div>
+</div>
+</section>

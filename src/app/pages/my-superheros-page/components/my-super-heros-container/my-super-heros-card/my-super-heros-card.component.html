@@ -1,0 +1,5 @@
+<p>{{ this.mySuperhero.id }}</p>
+<p>{{ this.mySuperhero.name }}</p>
+<p>{{ this.mySuperhero.description }}</p>
+<button (click)="deleteMySuperhero()" class="button-delete">X</button>
+<app-my-super-heros-modify-form [mySuperhero]="this.mySuperhero" (mySuperheroModified)="modifiedMySuperhero()"></app-my-super-heros-modify-form>

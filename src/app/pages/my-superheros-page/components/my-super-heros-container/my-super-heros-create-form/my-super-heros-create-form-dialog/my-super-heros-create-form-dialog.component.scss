@@ -1,0 +1,38 @@
+.formulary-create {
+  height: 25rem;
+  background-color: #242323;
+  color: #f3f3f3;
+  border-color: #f3f3f3; 
+
+  &__title {
+    text-align: center;
+    color: #f3f3f3;
+  }
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+
+  .title-form {
+    color: #f3f3f3;
+    margin-top: 1rem;
+  }
+}
+
+.div-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+
+}
+
+.button-hero{
+    background-color: #000000;
+    color: #f3f3f3;
+    border-radius: 0.7rem;
+    width: 5.5rem;
+    height: 1.8rem;
+    border-color: #f3f3f3;
+}

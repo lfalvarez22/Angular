@@ -1,0 +1,46 @@
+<div class="formulary-create">
+  <h1 mat-dialog-title class="formulary-create__title">CREATE NEW SUPERHERO</h1>
+  <form [formGroup]="newMySuperheroForm" (ngSubmit)="createMySuperhero()">
+    <div mat-dialog-content class="form-div">
+      <label for="name" class="title-form">ID: </label>
+      <input
+        id="id"
+        class="form-control"
+        type="text"
+        formControlName="id"
+        required
+        oninput="this.value = this.value.toUpperCase()"
+        
+      />
+      <label for="name" class="title-form">NAME: </label>
+      <input
+        id="name"
+        class="form-control"
+        type="text"
+        oninput="this.value = this.value.toUpperCase()"
+        formControlName="name"
+        required
+      />
+      <label for="name" class="title-form">DESCRIPTION: </label>
+      <input
+        id="description"
+        class="form-control"
+        type="text"
+        oninput="this.value = this.value.toUpperCase()"
+        formControlName="description"
+      />
+    </div>
+    <div mat-dialog-actions class="div-buttons">
+      <button mat-button mat-dialog-close class="button-hero">CANCEL</button>
+      <button
+        type="submit"
+        mat-button
+        mat-dialog-close
+        cdkFocusInitial
+        class="button-hero"
+      >
+        CREATE
+      </button>
+    </div>
+  </form>
+</div>

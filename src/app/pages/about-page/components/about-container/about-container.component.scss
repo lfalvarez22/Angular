@@ -1,0 +1,19 @@
+.section-about{
+display: flex;
+justify-content: center;
+background-color: black;
+padding:22rem;
+margin-bottom: 0px;
+   
+}
+
+.image-fran {
+    border-radius: 3rem;
+}
+
+.section-about__info__p {
+    padding: 0rem 10rem;
+    text-align: center;
+    font-size: 4.5rem;
+    color: #f3f3f3;
+}

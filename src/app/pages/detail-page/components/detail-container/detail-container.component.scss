@@ -1,0 +1,38 @@
+
+.section-detail{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../../../assets/images/backgrounAveng.jpg");
+    background-color: #a03232; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+app-super-hero-detail-global {
+     background-color: #ed1d24;
+     margin: 5rem 0rem;
+        
+
+}
+
+
+.detail-title {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+.detail-stats {
+    margin: 20rem 5rem ;
+    font-size: 2rem;
+    color: #f3f3f3;
+    font-weight: 4;
+}
+
+

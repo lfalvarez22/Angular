@@ -1,0 +1,13 @@
+<mat-card class="card">
+  <a [routerLink]="['/detail', superhero.id]">
+    <mat-card-title class="card__tittle">
+      {{ superhero.name | uppercase }}
+    </mat-card-title>
+    <img
+      mat-card-image
+      src="{{ superhero.thumbnail.path }}.{{ superhero.thumbnail.extension }}"
+      alt="{{ superhero.name }} image"
+      class="card_image"
+    />
+  </a>
+</mat-card>

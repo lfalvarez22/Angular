@@ -1,0 +1,22 @@
+<section class="section-detail">
+<div class="detail-title">
+  <app-super-hero-detail-global
+    *ngIf="this.superhero"
+    [superhero]="this.superhero"
+  ></app-super-hero-detail-global>
+  <div class="detail-stats">
+    <app-super-hero-detail-comics
+      *ngIf="this.superhero?.comics"
+      [superheroComics]="this.superhero.comics"
+    ></app-super-hero-detail-comics>
+    <app-super-hero-detail-stories
+      *ngIf="this.superhero?.stories"
+      [superheroStories]="this.superhero.stories"
+    ></app-super-hero-detail-stories>
+    <app-super-hero-detail-series
+      *ngIf="this.superhero?.series"
+      [superheroSeries]="this.superhero.series"
+    ></app-super-hero-detail-series>
+  </div>
+</div>
+</section>

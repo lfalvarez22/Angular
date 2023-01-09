@@ -1,0 +1,29 @@
+<div class="pagination">
+<ng-container *ngIf="superheros" class="pagination__container">
+  <input type="text" [(ngModel)]="this.nameToFilter" class="pagination__input" />
+  <pagination-controls
+    previousLabel="Prev"
+    nextLabel="Next"
+    (pageChange)="onPaginateChange($event)"
+   class="pagination__text">
+  </pagination-controls>
+  <div class="cards">
+    <ng-container
+      *ngFor="
+        let superhero of superheros
+          | filterSuperheros : this.nameToFilter
+          | paginate
+            : {
+                itemsPerPage: this.pageSize,
+                currentPage: page,
+                totalItems: totalResults
+              }
+      "
+    >
+      <app-super-hero-card-list
+        [superhero]="superhero"
+      ></app-super-hero-card-list>
+    </ng-container>
+  </div>
+</ng-container>
+</div>
